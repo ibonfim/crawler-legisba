@@ -7,7 +7,6 @@ import json
 html= urlopen('https://www.legislabahia.ba.gov.br/')
 bs= BeautifulSoup(html.read(),'html.parser')
 #print(bs)
-seletor='.view-categorias-de-documento > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr > td > a'
 td_elements= bs.find_all('td', {'class':'views-field views-field-name views-align-left'})
 links=[]
 
